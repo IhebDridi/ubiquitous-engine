@@ -1,0 +1,7 @@
+{
+  "/BELZ_FACADES/*":{
+    "target": "http://www.hoopp.fr/maquette/BELZ/iframe/BELZ_FACADES/",
+    "secure": false,
+    "changeOrigin": true
+  }
+}

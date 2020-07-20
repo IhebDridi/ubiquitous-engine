@@ -1,0 +1,49 @@
+<div class="example-container" [class.example-is-mobile]="mobileQuery.matches" *ngIf="!Fullscreen; else elseTemplate">
+  <mat-toolbar color="primary" class="example-toolbar">
+    <button class="button1" mat-icon-button (click)="snav.toggle()"><mat-icon>menu</mat-icon></button>
+
+    <!--<button mat-icon-button (click)="openUp()"><span class="material-icons">personal_video</span></button>-->
+    <h1 class="example-app-name" i18>Project presentation</h1>
+    <button class="button2" mat-icon-button (click)="snav2.toggle()"><mat-icon>menu2</mat-icon></button>
+  </mat-toolbar>
+
+  <mat-sidenav-container [hasBackdrop]="false" class="example-sidenav-container"
+                         [style.marginTop.px]="mobileQuery.matches ? 0 : 0">
+    <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : 'over'"
+                 [fixedInViewport]="mobileQuery.matches" fixedTopGap="0">
+      <mat-nav-list>
+        <app-project-tree ></app-project-tree>
+
+      </mat-nav-list>
+    </mat-sidenav>
+
+    <div >
+
+    </div>
+    <mat-sidenav-content >
+
+
+
+<form action="invalid">
+  <iframe appLoaded id="superposition" height="700" width="1500" src="https://wwf.org" frameborder="0"></iframe>
+  <button >hih</button>
+</form>
+
+    </mat-sidenav-content>
+
+    <mat-sidenav #snav2 mode="side" position="end" [mode]="mobileQuery.matches ? 'over' : 'over'"
+    [fixedInViewport]="mobileQuery.matches" fixedTopGap="0">
+<mat-nav-list>
+hello there
+
+</mat-nav-list>
+</mat-sidenav>
+
+  </mat-sidenav-container>
+</div>
+
+<ng-template #elseTemplate>
+  <iframe onload="onMyFrameLoad()"  id="superposition" height="900" width="1548" [src]="something" frameborder="0"></iframe>
+</ng-template>
+
+

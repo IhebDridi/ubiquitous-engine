@@ -1,0 +1,64 @@
+<div id="notepad" class="proj-nav-flex-main-container" style="z-index: 10;">
+  <div style="background-image: url({{currentImg}});
+  background-size: cover;
+
+  -webkit-filter: brightness(30%);width: 100%;height: 100%;position: absolute; z-index: 1;">
+
+
+  </div>
+  <div class="proj-nav-flex-title" style="z-index: 10;">
+    {{currentProjectName}}
+  </div>
+  <div id="style1" class="proj-nav-flex-body" style="z-index: 10;">
+    <div class="proj-nav-flex-proj-picture" *ngFor="let item of Projects">
+      <div class="proj-nav-flex-proj-picture-block">
+        <img id="imger" src="{{item.ProjectIcon}}" style="width:400px" alt="" (mouseover)="backgroundFade(item.ProjectIcon,item.ProjectName)">
+        <!--<div>
+          {{item.ProjectName}}
+        </div>-->
+      </div>
+
+
+
+    </div>
+
+  </div>
+
+  <hr style="width:80%;text-align:left;z-index: 10;">
+  <div class="proj-nav-flex-logos">
+    <div class="proj-nav-flex-logos-content">
+      logo MOU
+    </div>
+    <div class="proj-nav-flex-logos-content">
+      logo promoteur
+    </div>
+    <div class="proj-nav-flex-logos-content">
+      logo archi
+    </div>
+    <button class="proj-nav-flex-logos-content" routerLink="/previsualise" routerLinkActive="router-link-active">
+      Start
+    </button>
+
+  </div>
+
+
+</div>
+<menu id="ctxMenu">
+  {{currentProjectName}}
+  <menu title="Start" id="start" routerLink="/previsualise" routerLinkActive="router-link-active">
+  </menu>
+  <menu title="modify" id="modify" routerLink="/modify" routerLinkActive="router-link-active" >
+  </menu>
+  <!--<menu title="File">
+      <menu title="Save"></menu>
+      <menu title="Save As"></menu>
+      <menu title="Open"></menu>
+  </menu>
+  <menu title="Edit">
+      <menu title="Cut"></menu>
+      <menu title="Copy"></menu>
+      <menu title="Paste"></menu>
+  </menu>-->
+</menu>
+
+<button (click)="clickMe()">Click Me</button>

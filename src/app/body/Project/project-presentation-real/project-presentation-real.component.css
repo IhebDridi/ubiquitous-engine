@@ -1,0 +1,39 @@
+body{
+  background: white;
+}
+.main-cover{
+  z-index: 1;
+  position: relative;
+}
+.dow1{
+  position: fixed;
+  z-index: 2;
+  top: 90%;
+  left: 0%;
+}
+.dow2{
+  position: fixed;
+  z-index: 2;
+  top: 90%;
+  left: 90%;
+
+}
+.up1{
+  position: fixed;
+  z-index: 2;
+  top: 10%;
+  left: 90%;
+}
+.up2{
+  position: fixed;
+  z-index: 2;
+  top: 10%;
+  left: 85%;
+}
+.up3{
+  position: fixed;
+  z-index: 2;
+  top: 10%;
+  left: 95%;
+}
+

@@ -1,0 +1,52 @@
+ /*You can add global styles to this file, and also import other style files */
+/*@import '~bootstrap/dist/css/bootstrap.css';*/
+
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+/*
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body {
+
+  background: linear-gradient(rgba(0, 0, 0, 0.603),rgba(9, 9, 10, 0.603)), url('./assets/BG_MiamiDome.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  background: white;
+
+}
+
+*/
+body{
+  margin: 0;
+}
+.modal{
+  position: fixed;
+  transform: scale(0);
+  transition: 200md ease-in-out;
+  border: 1px solid black;
+  border-radius: 5px;z-index: 10;
+  background-color: white;
+  width: 500px;
+  max-width: 80%;
+  }
+  .modal.active{
+  transform: scale(1);
+  }
+  .modal-header{
+  display: flex;
+  padding: 10px 10px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+  }
+  .close-modal{
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+  }
+  .modal-body {
+  max-height: calc(100vh - 210px);
+  overflow-y: auto;
+  }
